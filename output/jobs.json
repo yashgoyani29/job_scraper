@@ -1,542 +1,398 @@
 [
     {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad,Gurugram",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "N/A",
-        "Company Name": "N/A",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "Not Mentioned",
-        "Job Portal": "Freshersworld",
-        "Job URL": "N/A"
-    },
-    {
-        "Job Title": "Internet Of Things (IoT)",
-        "Company Name": "DIPC Tech Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 6,000 - 11,000 /month",
+        "Job Title": "College Intern",
+        "Company Name": "Hewlett Packard",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "Competitive stipend",
         "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/internet-of-things-iot-internship-in-ahmedabad-at-dipc-tech-private-limited1763616274"
+        "Job URL": "https://internshala.com/internship/detail/college-intern-internship-in-bangalore-at-hewlett-packard1758536943"
     },
     {
-        "Job Title": "AI And System Embedded Engineer",
-        "Company Name": "ATSC",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 10,000 /month",
+        "Job Title": "Operations And Strategy",
+        "Company Name": "EkStep",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 - 20,000 /month",
         "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/ai-and-system-embedded-engineer-internship-in-ahmedabad-at-atsc1763380660"
+        "Job URL": "https://internshala.com/internship/detail/operations-and-strategy-internship-in-bangalore-at-ekstep1762504606"
     },
     {
-        "Job Title": "Information Technology",
-        "Company Name": "ITGS Infotech Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 10,000 - 20,000 /month",
+        "Job Title": "Business Development Intern",
+        "Company Name": "PlatinumRx.in",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 - 25,000 /month",
         "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/part-time-information-technology-internship-in-multiple-locations-at-itgs-infotech-private-limited1764671132"
+        "Job URL": "https://internshala.com/internship/detail/partnership-internship-in-bangalore-at-platinumrxin1763702380"
     },
     {
-        "Job Title": "Data Annotations For AI Model Training",
-        "Company Name": "Eonian Software Solutions Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 2,500 - 4,000 /month",
+        "Job Title": "Technical Writer",
+        "Company Name": "DTALES Tech",
+        "Location": "Bangalore(Hybrid)",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 /month",
         "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/part-time-data-annotations-for-ai-model-training-internship-in-ahmedabad-at-eonian-software-solutions-private-limited1764090426"
+        "Job URL": "https://internshala.com/internship/detail/technical-writer-internship-in-bangalore-at-dtales-tech1764236817"
     },
     {
-        "Job Title": "Innovation Project",
-        "Company Name": "STEMpedia",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 8,000 - 12,000 /month",
+        "Job Title": "Digital Marketing",
+        "Company Name": "Chola Apparels",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 5,000 - 8,000 /month",
         "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/innovation-project-internship-in-ahmedabad-at-stempedia1764661414"
+        "Job URL": "https://internshala.com/internship/detail/digital-marketing-internship-in-bangalore-at-chola-apparels1764163866"
     },
     {
-        "Job Title": "Flutter Development",
-        "Company Name": "Scienext India Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 7,000 - 12,000 /month",
+        "Job Title": "Supply Chain Management (SCM)",
+        "Company Name": "Monrow Shoes",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 /month",
         "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/flutter-development-internship-in-multiple-locations-at-scienext-india-private-limited1764582252"
+        "Job URL": "https://internshala.com/internship/detail/supply-chain-management-scm-internship-in-bangalore-at-monrow-shoes1764226109"
     },
     {
-        "Job Title": "Computer Operator",
-        "Company Name": "Multiwa",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
+        "Job Title": "Data Entry",
+        "Company Name": "NoBroker",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
         "Salary": "₹ 12,000 - 15,000 /month",
         "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/computer-operator-internship-in-ahmedabad-at-multiwa1764948796"
+        "Job URL": "https://internshala.com/internship/detail/data-entry-internship-in-bangalore-at-nobroker1764254680"
+    },
+    {
+        "Job Title": "Technical Program Manager",
+        "Company Name": "Razorpay",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "Competitive stipend",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/technical-program-manager-internship-in-bangalore-at-razorpay1764311275"
+    },
+    {
+        "Job Title": "Content and Social Media Marketing",
+        "Company Name": "Fiscal Flow",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 8,000 - 14,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/content-and-social-media-marketing-internship-in-bangalore-at-fiscal-flow1763467186"
+    },
+    {
+        "Job Title": "Founders Office & Marketing",
+        "Company Name": "SuperU",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 - 30,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/founders-office-marketing-internship-in-bangalore-at-superu1763461248"
+    },
+    {
+        "Job Title": "N/A",
+        "Company Name": "N/A",
+        "Location": "⭐ 4.5",
+        "Experience": "Fresher",
+        "Salary": "N/A",
+        "Job Portal": "Internshala",
+        "Job URL": "N/A"
+    },
+    {
+        "Job Title": "Community Activation",
+        "Company Name": "Marzi By Primus",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 - 20,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/community-activation-internship-in-bangalore-at-marzi-by-primus1763551901"
+    },
+    {
+        "Job Title": "Marketing Research & Analytics",
+        "Company Name": "CertPro",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 - 25,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/marketing-research-analytics-internship-in-bangalore-at-certpro1763608097"
+    },
+    {
+        "Job Title": "Customer Service/Customer Support",
+        "Company Name": "AQ Corporation India Private Limited",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 7,500 - 10,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/customer-service-customer-support-internship-in-bangalore-at-aq-corporation-india-private-limited1763556900"
+    },
+    {
+        "Job Title": "E-Commerce Operations",
+        "Company Name": "RuralEquip PVT Ltd",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 8,000 - 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/e-commerce-operations-internship-in-bangalore-at-ruralequip-pvt-ltd1764168724"
+    },
+    {
+        "Job Title": "Content and Social Media Marketing",
+        "Company Name": "Tanai Balaji",
+        "Location": "Bangalore(Hybrid)",
+        "Experience": "Fresher",
+        "Salary": "₹ 4,000 - 6,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/part-time-content-and-social-media-marketing-internship-in-bangalore-at-tanai-balaji1764226392"
+    },
+    {
+        "Job Title": "Customer Service/Customer Support",
+        "Company Name": "Sugar.fit",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/customer-service-customer-support-internship-in-bangalore-at-sugarfit1764219786"
+    },
+    {
+        "Job Title": "Key Account Associate",
+        "Company Name": "HappyLocate Relocation Services Private Limited",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 10,000 - 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/key-account-associate-internship-in-bangalore-at-happylocate-relocation-services-private-limited1764238570"
+    },
+    {
+        "Job Title": "Telecalling",
+        "Company Name": "Infocruise Solutions Private LImited",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 8,500 - 10,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/telecalling-internship-in-bangalore-at-infocruise-solutions-private-limited1764241856"
+    },
+    {
+        "Job Title": "Event Management",
+        "Company Name": "NYUC Technologies",
+        "Location": "Delhi, Hyderabad, Mumbai, Bangalore(Hybrid)",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/event-management-internship-in-multiple-locations-at-nyuc-technologies1763959180"
+    },
+    {
+        "Job Title": "Client Servicing",
+        "Company Name": "WILDFOX BUSINESS ADVOCACY",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 2,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/client-servicing-internship-in-bangalore-at-wildfox-business-advocacy1764689795"
+    },
+    {
+        "Job Title": "GTM",
+        "Company Name": "FirstClub Technology Private Limited",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 25,000 - 30,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/gtm-internship-in-bangalore-at-firstclub-technology-private-limited1764829004"
+    },
+    {
+        "Job Title": "Office Assistant",
+        "Company Name": "Shree Impex",
+        "Location": "Bangalore, Koramangala",
+        "Experience": "Fresher",
+        "Salary": "₹ 2,000 - 7,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/office-assistant-internship-in-multiple-locations-at-shree-impex1763461455"
     },
     {
         "Job Title": "E-Commerce",
-        "Company Name": "The House Of Vraj:bhoomi",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 8,000 - 15,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/e-commerce-internship-in-ahmedabad-at-the-house-of-vrajbhoomi1764849069"
-    },
-    {
-        "Job Title": "Internet Of Things (IoT)",
-        "Company Name": "Exceliot Technologies Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/internet-of-things-iot-internship-in-multiple-locations-at-exceliot-technologies-private-limited1764931430"
-    },
-    {
-        "Job Title": "React Native Development",
-        "Company Name": "Naiplus Solution Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,500 - 8,700 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/react-native-development-internship-in-ahmedabad-at-naiplus-solution-private-limited1765695018"
-    },
-    {
-        "Job Title": "React Native Development",
-        "Company Name": "OrgLance Technologies LLP",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 6,000 - 7,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/react-native-development-internship-in-ahmedabad-at-orglance-technologies-llp1763555112"
-    },
-    {
-        "Job Title": "Flutter Development",
-        "Company Name": "Maxgen Technologies Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,000 - 12,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/flutter-development-internship-in-ahmedabad-at-maxgen-technologies-private-limited1765353396"
-    },
-    {
-        "Job Title": "Game Development",
-        "Company Name": "Itechnuts",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 3,000 - 6,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/game-development-internship-in-ahmedabad-at-itechnuts1765267443"
-    },
-    {
-        "Job Title": "Game Development",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/game-development-internship-in-multiple-locations-at-tsteps-private-limited1762153391"
-    },
-    {
-        "Job Title": "Full Stack Development",
-        "Company Name": "Maxgen Technologies Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,000 - 12,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/full-stack-development-internship-in-ahmedabad-at-maxgen-technologies-private-limited1764824075"
-    },
-    {
-        "Job Title": "ReactJS Development",
-        "Company Name": "Chaintech Network",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 9,500 - 10,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/reactjs-development-internship-in-ahmedabad-at-chaintech-network1764573695"
-    },
-    {
-        "Job Title": "ReactJS Development",
-        "Company Name": "Maxgen Technologies Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,000 - 12,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/reactjs-development-internship-in-ahmedabad-at-maxgen-technologies-private-limited1764736218"
-    },
-    {
-        "Job Title": "SQL Developer",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/sql-developer-internship-in-multiple-locations-at-tsteps-private-limited1762151902"
-    },
-    {
-        "Job Title": "MERN Stack",
-        "Company Name": "Maxgen Technologies Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,000 - 12,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/part-time-mern-stack-internship-in-ahmedabad-at-maxgen-technologies-private-limited1765357770"
-    },
-    {
-        "Job Title": "Software Testing",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/software-testing-internship-in-multiple-locations-at-tsteps-private-limited1762159771"
-    },
-    {
-        "Job Title": "Manual Testing",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/manual-testing-internship-in-multiple-locations-at-tsteps-private-limited1762157179"
-    },
-    {
-        "Job Title": "AI-Machine Lerning",
-        "Company Name": "Maxgen Technologies Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,000 - 12,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/part-time-ai-machine-lerning-internship-in-ahmedabad-at-maxgen-technologies-private-limited1765357926"
-    },
-    {
-        "Job Title": "Web Development",
-        "Company Name": "Ranogic IT Solutions",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 3,000 - 6,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/web-development-internship-in-ahmedabad-at-ranogic-it-solutions1763112357"
-    },
-    {
-        "Job Title": "Programming",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/programming-internship-in-multiple-locations-at-tsteps-private-limited1762156258"
-    },
-    {
-        "Job Title": "Full Stack Development",
-        "Company Name": "Meru Technosoft Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 3,000 - 6,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/full-stack-development-internship-in-ahmedabad-at-meru-technosoft-private-limited1763471030"
-    },
-    {
-        "Job Title": "PHP Development",
-        "Company Name": "ECodeSoft Solutions",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 3,000 - 8,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/php-development-internship-in-ahmedabad-at-ecodesoft-solutions1764927058"
-    },
-    {
-        "Job Title": "Python Development",
-        "Company Name": "Chaintech Network",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 9,500 - 10,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/python-development-internship-in-ahmedabad-at-chaintech-network1764573338"
-    },
-    {
-        "Job Title": "ReactJS Development",
-        "Company Name": "Maxgen Technologies Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,000 - 12,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/part-time-reactjs-development-internship-in-ahmedabad-at-maxgen-technologies-private-limited1764920480"
-    },
-    {
-        "Job Title": "JavaScript Development",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/javascript-development-internship-in-multiple-locations-at-tsteps-private-limited1762158549"
-    },
-    {
-        "Job Title": "PHP Development",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/php-development-internship-in-multiple-locations-at-tsteps-private-limited1762161157"
-    },
-    {
-        "Job Title": "Full Stack Development",
-        "Company Name": "WonderBotz",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 10,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/full-stack-development-internship-in-ahmedabad-at-wonderbotz1765800276"
-    },
-    {
-        "Job Title": "AWS DevOps Engineer",
-        "Company Name": "Maxgen Technologies Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,000 - 12,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/aws-devops-engineer-internship-in-ahmedabad-at-maxgen-technologies-private-limited1765603048"
-    },
-    {
-        "Job Title": "Flutter Development",
-        "Company Name": "Meru Technosoft Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 3,000 - 5,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/flutter-development-internship-in-ahmedabad-at-meru-technosoft-private-limited1765454648"
-    },
-    {
-        "Job Title": "Quality Analyst",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/quality-analyst-internship-in-multiple-locations-at-tsteps-private-limited1762161642"
-    },
-    {
-        "Job Title": "Embedded Systems",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/embedded-systems-internship-in-multiple-locations-at-tsteps-private-limited1762156894"
-    },
-    {
-        "Job Title": "Mobile App Development",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/mobile-app-development-internship-in-multiple-locations-at-tsteps-private-limited1762159495"
-    },
-    {
-        "Job Title": "Web Programmer",
-        "Company Name": "Maxgen Technologies Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,000 - 12,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/part-time-web-programmer-internship-in-ahmedabad-at-maxgen-technologies-private-limited1765780187"
-    },
-    {
-        "Job Title": "Web Development",
-        "Company Name": "Maxgen Technologies Private Limited",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 5,000 - 12,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/web-development-internship-in-ahmedabad-at-maxgen-technologies-private-limited1764577171"
-    },
-    {
-        "Job Title": "iOS App Development",
-        "Company Name": "TSTEPS PRIVATE LIMITED",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
-        "Salary": "₹ 30,000 - 40,000 /month",
-        "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/ios-app-development-internship-in-multiple-locations-at-tsteps-private-limited1762159806"
-    },
-    {
-        "Job Title": "Product Management",
-        "Company Name": "Coding Junior",
-        "Location": "Ahmedabad",
-        "Experience": "3-4",
+        "Company Name": "Monrow Shoes",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
         "Salary": "₹ 15,000 /month",
         "Job Portal": "Internshala",
-        "Job URL": "https://internshala.com/internship/detail/product-management-internship-in-multiple-locations-at-coding-junior1764562748"
+        "Job URL": "https://internshala.com/internship/detail/e-commerce-internship-in-bangalore-at-monrow-shoes1764752374"
+    },
+    {
+        "Job Title": "Client Acquisition",
+        "Company Name": "SmartED",
+        "Location": "Bangalore, Andhra Nagar",
+        "Experience": "Fresher",
+        "Salary": "₹ 26,000 - 28,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/client-acquisition-internship-in-multiple-locations-at-smarted1764948248"
+    },
+    {
+        "Job Title": "Import Export",
+        "Company Name": "Matrix Exports",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 10,000 - 20,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/import-export-internship-in-bangalore-at-matrix-exports1764173143"
+    },
+    {
+        "Job Title": "Media Production",
+        "Company Name": "BabyBillion",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 10,000 - 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/media-production-internship-in-bangalore-at-babybillion1764227906"
+    },
+    {
+        "Job Title": "Social Media & Community Engagement",
+        "Company Name": "Prasun Ramdas",
+        "Location": "Bangalore(Hybrid)",
+        "Experience": "Fresher",
+        "Salary": "₹ 10,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/social-media-community-engagement-internship-in-bangalore-at-prasun-ramdas1764657228"
+    },
+    {
+        "Job Title": "Telecaller",
+        "Company Name": "NutnBolt Business Solution (Dil Foods)",
+        "Location": "Bangalore(Hybrid)",
+        "Experience": "Fresher",
+        "Salary": "₹ 14,000 - 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/telecaller-internship-in-bangalore-at-nutnbolt-business-solution-dil-foods1764756935"
+    },
+    {
+        "Job Title": "Client Servicing",
+        "Company Name": "D'ART Private Limited",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 25,000 - 35,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/client-servicing-internship-in-bangalore-at-dart-private-limited1764833595"
+    },
+    {
+        "Job Title": "Telecalling",
+        "Company Name": "Enduring Ventures",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 12,000 - 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/telecalling-internship-in-bangalore-at-enduring-ventures1765355211"
+    },
+    {
+        "Job Title": "Content Review",
+        "Company Name": "Snapmint Credit Advisory Private Limited",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 5,000 - 8,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/content-review-internship-in-bangalore-at-snapmint-credit-advisory-private-limited1765276303"
+    },
+    {
+        "Job Title": "Key Account Associate",
+        "Company Name": "HappyLocate Relocation Services Private Limited",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 10,000 - 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/key-account-associate-internship-in-bangalore-at-happylocate-relocation-services-private-limited1764305737"
+    },
+    {
+        "Job Title": "Data Operations Specialist",
+        "Company Name": "Scarlet",
+        "Location": "Bangalore(Hybrid)",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/part-time-data-operations-specialist-internship-in-bangalore-at-scarlet1765445980"
+    },
+    {
+        "Job Title": "Front Office",
+        "Company Name": "UNITED HOSPITAL",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 5,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/front-office-internship-in-bangalore-at-united-hospital1765297285"
+    },
+    {
+        "Job Title": "Founders Office",
+        "Company Name": "Finarva",
+        "Location": "Bellary, Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 10,000 - 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/founders-office-internship-in-multiple-locations-at-fin-tech-startup1765210452"
+    },
+    {
+        "Job Title": "Marketing",
+        "Company Name": "Icecreamlabs",
+        "Location": "Bangalore(Hybrid)",
+        "Experience": "Fresher",
+        "Salary": "₹ 10,000 - 15,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/part-time-marketing-internship-in-bangalore-at-icecreamlabs1762945552"
+    },
+    {
+        "Job Title": "Resume with Razorpay - Technical Program Manager",
+        "Company Name": "Razorpay",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "Competitive stipend",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/resume-with-razorpay-technical-program-manager-internship-in-bangalore-at-razorpay1763539890"
+    },
+    {
+        "Job Title": "Business Development (Sales)",
+        "Company Name": "Saleson Technologies",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 25,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/business-development-sales-internship-in-bangalore-at-saleson-technologies1763558853"
+    },
+    {
+        "Job Title": "Train Travel Associate",
+        "Company Name": "Datawise Management Services India Private Limited",
+        "Location": "Amritsar, Bhubaneswar, Chennai, Delhi, Guwahati, Indore, Kolkata, Patna, Thiruvananthapuram, Visakhapatnam, Secunderabad, Mumbai, Varanasi, Bangalore, Jammu",
+        "Experience": "Fresher",
+        "Salary": "₹ 15,000 - 20,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/part-time-train-travel-associate-internship-in-multiple-locations-at-datawise-management-services-india-private-limited1764592085"
+    },
+    {
+        "Job Title": "E-Commerce",
+        "Company Name": "Cloudnine Hospital",
+        "Location": "Bangalore",
+        "Experience": "Fresher",
+        "Salary": "₹ 10,000 /month",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.com/internship/detail/e-commerce-internship-in-bangalore-at-cloudnine-hospital1764645570"
+    },
+    {
+        "Job Title": "N/A",
+        "Company Name": "N/A",
+        "Location": "Banglore",
+        "Experience": "Fresher",
+        "Salary": "N/A",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.comhttps://internshala.com/internships/work-from-home-data-analyst-internships/?utm_source=wfh_location_message"
+    },
+    {
+        "Job Title": "N/A",
+        "Company Name": "N/A",
+        "Location": "Banglore",
+        "Experience": "Fresher",
+        "Salary": "N/A",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.comhttps://internshala.com/internships/work-from-home-data-analyst-internships/?utm_source=wfh_location_message"
+    },
+    {
+        "Job Title": "N/A",
+        "Company Name": "N/A",
+        "Location": "Banglore",
+        "Experience": "Fresher",
+        "Salary": "N/A",
+        "Job Portal": "Internshala",
+        "Job URL": "https://internshala.comhttps://internshala.com/internships/work-from-home-data-analyst-internships/?utm_source=wfh_location_message"
     }
 ]
