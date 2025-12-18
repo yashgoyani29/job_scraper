@@ -200,13 +200,13 @@ if st.button("🚀 Search Jobs"):
         
         with tab1:
             st.success(f"✅ Found {len(df)} unique job listings (merged from Freshersworld + Internshala)")
-            st.dataframe(df_display[available_display_cols], width='stretch', use_container_width=True, hide_index=True)
+            st.dataframe(df_display[available_display_cols], width='stretch', hide_index=True)
             
         with tab3:
             freshersworld_df = df_display[df_display["Job Portal"] == "Freshersworld"]
             if len(freshersworld_df) > 0:
                 st.success(f"🏢 Found {len(freshersworld_df)} jobs from Freshersworld")
-                st.dataframe(freshersworld_df[available_display_cols], width='stretch', use_container_width=True, hide_index=True)
+                st.dataframe(freshersworld_df[available_display_cols], width='stretch', hide_index=True)
             else:
                 st.info("ℹ️ No Freshersworld results found.")
         
@@ -215,7 +215,7 @@ if st.button("🚀 Search Jobs"):
             if len(internshala_df) > 0:
                 st.success(f"🎓 Found {len(internshala_df)} internships/jobs from Internshala")
                 st.markdown("**💡 Tip:** Internshala primarily lists internships and fresher positions.")
-                st.dataframe(internshala_df[available_display_cols], width='stretch', use_container_width=True, hide_index=True)
+                st.dataframe(internshala_df[available_display_cols], width='stretch', hide_index=True)
             else:
                 st.info("ℹ️ No Internshala results found. Try searching for fresher positions (0-1 years experience).")
 
