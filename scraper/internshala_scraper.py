@@ -100,49 +100,6 @@ def scrape_internshala(designation, city, experience):
                              j.find("div", class_="stipend"))
                 salary = stipend_tag.get_text(strip=True) if stipend_tag else "N/A"
 
-                # Duration
-                duration_tag = (j.find("div", class_="other_detail_item_row") or 
-                              j.find("span", class_="duration") or
-                              j.find("div", class_="duration"))
-                if not duration_tag:
-                    # Try finding in details
-                    detail_row = j.find("div", class_="internship_details")
-                    if detail_row:
-                        duration_tag = detail_row.find("span", string=lambda x: x and ("month" in x.lower() or "week" in x.lower()))
-                duration = duration_tag.get_text(strip=True) if duration_tag else "N/A"
-
-                # Skills
-                skills_tag = (j.find("div", class_="round_tabs_container") or 
-                            j.find("div", class_="tags_container"))
-                if skills_tag:
-                    skill_spans = skills_tag.find_all("span", class_="round_tabs")
-                    if not skill_spans:
-                        skill_spans = skills_tag.find_all("span")
-                    skills = ", ".join([s.get_text(strip=True) for s in skill_spans if s.get_text(strip=True)])
-                else:
-                    skills = "N/A"
-
-                # Job Link - improved selector
-                link_tag = (j.find("a", class_="view_detail_button") or 
-                          j.find("a", href=lambda x: x and "/internship/" in x) or
-                          j.find("h3", class_="job-internship-name"))
-                
-                if link_tag:
-                    if link_tag.name == "a" and link_tag.has_attr("href"):
-                        href = link_tag["href"]
-                    elif link_tag.name == "h3":
-                        parent_link = link_tag.find_parent("a")
-                        href = parent_link["href"] if parent_link and parent_link.has_attr("href") else None
-                    else:
-                        href = None
-                    
-                    if href:
-                        link = href if href.startswith("http") else f"https://internshala.com{href}"
-                    else:
-                        link = "N/A"
-                else:
-                    link = "N/A"
-
                 # Only add if we have at least a title
                 if title != "N/A":
                     jobs.append({
@@ -151,11 +108,8 @@ def scrape_internshala(designation, city, experience):
                         "Location": location,
                         "Experience Required": experience,
                         "Salary / Stipend": salary,
-                        "Skills / Role": skills,
-                        "Duration": duration,
                         "Posted Date": posted,
-                        "Job Portal": "Internshala",
-                        "Job URL": link,
+                        "Job Portal": "Internshala"
                     })
             except Exception as e:
                 print(f"⚠️ Error parsing Internshala job card: {e}")

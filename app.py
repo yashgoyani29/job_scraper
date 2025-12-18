@@ -1,73 +1,3 @@
-# import streamlit as st
-# import pandas as pd
-# from scraper.freshersworld_scraper import scrape_freshersworld
-# from scraper.internshala_scraper import scrape_internshala
-# from utils.formatter import save_to_excel, save_to_json
-
-# # ---------------------------------------------------
-# st.set_page_config(page_title="Job Aggregation Tool", page_icon="💼", layout="wide")
-# st.title("💼 Job Aggregation Tool")
-# st.markdown("Search and aggregate jobs from **Freshersworld** and **Internshala** easily!")
-
-# # ---------------- Dropdown Inputs -------------------
-# col1, col2, col3 = st.columns(3)
-
-# with col1:
-#     designation = st.selectbox("🎯 Select Designation", [
-#         "Python Developer", "Java Developer", "Data Analyst", "Data Scientist",
-#         "Web Developer", "Frontend Developer", "Backend Developer",
-#         "Full Stack Developer", "Machine Learning Engineer", "Software Engineer",
-#         "Business Analyst", "UI/UX Designer", "Android Developer"
-#     ])
-
-# with col2:
-#     city = st.selectbox("📍 Select City", [
-#         "Bangalore", "Hyderabad", "Chennai", "Pune", "Mumbai",
-#         "Delhi", "Ahmedabad", "Kolkata", "Noida", "Gurgaon", "Coimbatore", "Jaipur"
-#     ])
-
-# with col3:
-#     experience = st.selectbox("🎓 Experience Level", [
-#         "Fresher", "0–1 Years", "1–3 Years", "3–5 Years", "5–8 Years", "8+ Years"
-#     ])
-
-# # ----------------- Scrape Button --------------------
-# if st.button("🚀 Search Jobs"):
-#     st.info("⏳ Scraping job portals... please wait...")
-
-#     # Dynamic source selection
-#     if "fresher" in experience.lower() or "0" in experience:
-#         st.write("🧑‍🎓 **Detected Fresher Level** → Scraping Internshala + Freshersworld")
-#         fw_jobs = scrape_freshersworld(designation, city, experience)
-#         intern_jobs = scrape_internshala(designation, city, experience)
-#         all_jobs = fw_jobs + intern_jobs
-#     else:
-#         st.write("👨‍💼 **Experienced Level** → Scraping Freshersworld only")
-#         all_jobs = scrape_freshersworld(designation, city, experience)
-
-#     # ---------------- Display Results -----------------
-#     if all_jobs:
-#         df = pd.DataFrame(all_jobs)
-#         st.success(f"✅ Found {len(df)} job listings")
-#         st.dataframe(df[["Job Title", "Company Name", "Location", "Salary", "Job Portal"]])
-
-#         # Save output
-#         save_to_excel(all_jobs, "output/jobs.xlsx")
-#         save_to_json(all_jobs, "output/jobs.json")
-
-#         with open("output/jobs.xlsx", "rb") as f:
-#             st.download_button(
-#                 label="📥 Download Excel File",
-#                 data=f,
-#                 file_name="jobs.xlsx",
-#                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-#             )
-
-#     else:
-#         st.warning("❌ No jobs found. Try different filters.")
-
-
-
 import streamlit as st
 import pandas as pd
 from scraper.freshersworld_scraper import scrape_freshersworld
@@ -140,8 +70,7 @@ if st.button("🚀 Search Jobs"):
         # ✅ Ensure all columns exist (prevents KeyErrors)
         expected_columns = [
             "Job Title", "Company Name", "Location", "Experience Required",
-            "Salary", "Salary / Stipend", "Skills / Role", "Duration",
-            "Posted Date", "Job Portal", "Job URL"
+            "Salary", "Salary / Stipend", "Posted Date", "Job Portal"
         ]
         for col in expected_columns:
             if col not in df.columns:
@@ -163,11 +92,8 @@ if st.button("🚀 Search Jobs"):
         df.drop_duplicates(subset=["Job Title", "Company Name"], inplace=True)
         unique_count = len(df)
 
-        # ✅ Make Job URLs clickable (only for display, keep original for saving)
+        # ✅ Create display dataframe
         df_display = df.copy()
-        df_display["Job URL"] = df_display["Job URL"].apply(
-            lambda x: f"[🔗 View Job]({x})" if isinstance(x, str) and x != "N/A" else "N/A"
-        )
 
         st.info(f"🧾 Merged {raw_count} listings → after removing duplicates: **{unique_count} unique jobs saved.**")
         print(f"🧾 Merged {raw_count} listings → after removing duplicates: {unique_count} unique jobs saved.")
@@ -188,8 +114,7 @@ if st.button("🚀 Search Jobs"):
         # ✅ Column order for display
         display_cols = [
             "Job Title", "Company Name", "Location", "Experience Required",
-            "Salary / Stipend", "Skills / Role", "Duration", "Posted Date",
-            "Job Portal"
+            "Salary / Stipend", "Posted Date", "Job Portal"
         ]
         # Ensure display columns exist
         available_display_cols = [col for col in display_cols if col in df_display.columns]
