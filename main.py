@@ -1,6 +1,7 @@
 from scraper.freshersworld_scraper import scrape_freshersworld
 from scraper.internshala_scraper import scrape_internshala
 from utils.formatter import save_to_json, save_to_excel
+import pandas as pd
 
 def main():
     print("===== JOB AGGREGATION TOOL =====")
@@ -24,6 +25,18 @@ def main():
     print(f"\n✅ Total Jobs Collected: {len(all_jobs)}")
 
     if all_jobs:
+        # Add searched job title to each job entry
+        for job in all_jobs:
+            job["Searched Job Title"] = designation
+        
+        # Display summary
+        df = pd.DataFrame(all_jobs)
+        print(f"\n📊 Search Results for: {designation}")
+        print(f"📍 Location: {city}")
+        print(f"🎓 Experience: {experience}")
+        print(f"\n📋 Job Listings Preview:")
+        print(df[["Searched Job Title", "Job Title", "Company Name", "Location", "Job Portal"]].to_string(index=False))
+        
         save_to_json(all_jobs)
         save_to_excel(all_jobs)
         print("\n🎯 Results saved in /output as jobs.json and jobs.xlsx")
