@@ -125,6 +125,8 @@ def scrape_freshersworld(designation, city, experience):
                 "Location": location,
                 "Experience Required": exp,
                 "Salary / Stipend": salary,
+                "Skills / Role": "N/A",  # Freshersworld doesn't typically show skills in listing
+                "Duration": "N/A",  # Not applicable for jobs
                 "Posted Date": posted,
                 "Job Portal": "Freshersworld",
                 "Job URL": link
