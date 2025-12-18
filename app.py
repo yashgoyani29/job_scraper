@@ -137,12 +137,9 @@ if st.button("🚀 Search Jobs"):
         
         df = pd.DataFrame(all_jobs)
 
-        # ✅ Add the searched job title column
-        df["Searched Job Title"] = designation
-
         # ✅ Ensure all columns exist (prevents KeyErrors)
         expected_columns = [
-            "Searched Job Title", "Job Title", "Company Name", "Location", "Experience Required",
+            "Job Title", "Company Name", "Location", "Experience Required",
             "Salary", "Salary / Stipend", "Skills / Role", "Duration",
             "Posted Date", "Job Portal", "Job URL"
         ]
@@ -175,25 +172,59 @@ if st.button("🚀 Search Jobs"):
         st.info(f"🧾 Merged {raw_count} listings → after removing duplicates: **{unique_count} unique jobs saved.**")
         print(f"🧾 Merged {raw_count} listings → after removing duplicates: {unique_count} unique jobs saved.")
 
-        # ✅ Column order for display (include searched job title first)
+        # ✅ Show breakdown by portal
+        portal_counts = df["Job Portal"].value_counts()
+        st.markdown("### 📊 Results Breakdown")
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            fw_count = portal_counts.get("Freshersworld", 0)
+            st.metric("🏢 Freshersworld", f"{fw_count} jobs")
+        with col2:
+            intern_count = portal_counts.get("Internshala", 0)
+            st.metric("🎓 Internshala", f"{intern_count} internships/jobs")
+        with col3:
+            st.metric("📈 Total Unique", f"{unique_count} jobs")
+
+        # ✅ Column order for display
         display_cols = [
-            "Searched Job Title", "Job Title", "Company Name", "Location", "Experience Required",
-            "Salary / Stipend", "Posted Date",
+            "Job Title", "Company Name", "Location", "Experience Required",
+            "Salary / Stipend", "Skills / Role", "Duration", "Posted Date",
             "Job Portal"
         ]
         # Ensure display columns exist
         available_display_cols = [col for col in display_cols if col in df_display.columns]
 
-        # ✅ Display results with searched job title
-        st.success(f"✅ Found {len(df)} unique job listings for **{designation}** (merged from Freshersworld + Internshala)")
-        st.dataframe(df_display[available_display_cols], width='stretch')
+        # ✅ Display results with tabs for better UX
+        st.markdown("### 📋 Job Listings")
+        tab1, tab2, tab3 = st.tabs(["📊 All Jobs", "🎓 Internshala Only", "🏢 Freshersworld Only"])
+        
+        with tab1:
+            st.success(f"✅ Found {len(df)} unique job listings (merged from Freshersworld + Internshala)")
+            st.dataframe(df_display[available_display_cols], width='stretch', use_container_width=True, hide_index=True)
+            
+        with tab3:
+            freshersworld_df = df_display[df_display["Job Portal"] == "Freshersworld"]
+            if len(freshersworld_df) > 0:
+                st.success(f"🏢 Found {len(freshersworld_df)} jobs from Freshersworld")
+                st.dataframe(freshersworld_df[available_display_cols], width='stretch', use_container_width=True, hide_index=True)
+            else:
+                st.info("ℹ️ No Freshersworld results found.")
+        
+        with tab2:
+            internshala_df = df_display[df_display["Job Portal"] == "Internshala"]
+            if len(internshala_df) > 0:
+                st.success(f"🎓 Found {len(internshala_df)} internships/jobs from Internshala")
+                st.markdown("**💡 Tip:** Internshala primarily lists internships and fresher positions.")
+                st.dataframe(internshala_df[available_display_cols], width='stretch', use_container_width=True, hide_index=True)
+            else:
+                st.info("ℹ️ No Internshala results found. Try searching for fresher positions (0-1 years experience).")
 
         # ✅ Save outputs (save full dataframe with ALL columns - no filtering)
-        # Get all columns from dataframe (not just display columns)
-        all_columns = list(df.columns)
+        # Get all columns from dataframe (excluding any searched job title if it exists)
+        all_columns = [col for col in df.columns if col != "Searched Job Title"]
         all_jobs_data = df[all_columns].to_dict(orient="records")
         
-        # Save complete job data with all fields
+        # Save complete job data with all fields (without searched job title)
         save_to_excel(all_jobs_data, "output/jobs.xlsx")
         save_to_json(all_jobs_data, "output/jobs.json")
         st.info(f"💾 Saved {len(all_jobs_data)} complete job records (all fields included) to JSON and Excel files")
