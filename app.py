@@ -188,9 +188,15 @@ if st.button("🚀 Search Jobs"):
         st.success(f"✅ Found {len(df)} unique job listings for **{designation}** (merged from Freshersworld + Internshala)")
         st.dataframe(df_display[available_display_cols], width='stretch')
 
-        # ✅ Save outputs (save full dataframe with all columns)
-        save_to_excel(df.to_dict(orient="records"), "output/jobs.xlsx")
-        save_to_json(df.to_dict(orient="records"), "output/jobs.json")
+        # ✅ Save outputs (save full dataframe with ALL columns - no filtering)
+        # Get all columns from dataframe (not just display columns)
+        all_columns = list(df.columns)
+        all_jobs_data = df[all_columns].to_dict(orient="records")
+        
+        # Save complete job data with all fields
+        save_to_excel(all_jobs_data, "output/jobs.xlsx")
+        save_to_json(all_jobs_data, "output/jobs.json")
+        st.info(f"💾 Saved {len(all_jobs_data)} complete job records (all fields included) to JSON and Excel files")
 
         # ✅ Download Buttons
         colA, colB = st.columns(2)
