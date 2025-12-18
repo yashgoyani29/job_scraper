@@ -1,80 +1,79 @@
 import requests
 from bs4 import BeautifulSoup
-import urllib.parse
 import time
 
 def scrape_internshala(designation, city, experience):
-    """
-    Scrapes job and internship listings from Internshala.
-    Automatically goes through multiple pages.
-    Extracts Job Title, Company Name, Location, Stipend/Salary, and Job URL.
-    """
-
     base_url = "https://internshala.com/internships/"
     query = f"{designation.replace(' ', '-')}-internship-in-{city.replace(' ', '-')}"
-    print(f"🔎 Scraping: {base_url}{query}")
-
     headers = {
         "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
             "AppleWebKit/537.36 (KHTML, like Gecko) "
             "Chrome/121.0.0.0 Safari/537.36"
-        ),
-        "Accept-Language": "en-US,en;q=0.9",
+        )
     }
 
+    print(f"🔎 Scraping: {base_url}{query}")
     jobs = []
 
-    # Pagination: scrape up to 3 pages
+    # Pagination (1–3)
     for page in range(1, 4):
         url = f"{base_url}{query}/page-{page}/"
-        print(f"➡️ Scraping page {page}: {url}")
+        print(f"➡️ Page {page}: {url}")
         time.sleep(1)
 
         try:
-            response = requests.get(url, headers=headers)
-            if response.status_code != 200:
-                print(f"⚠️ Skipping page {page}, status {response.status_code}")
+            r = requests.get(url, headers=headers)
+            if r.status_code != 200:
                 continue
         except Exception as e:
-            print(f"❌ Error fetching page {page}:", e)
+            print("❌ Error fetching Internshala:", e)
             continue
 
-        soup = BeautifulSoup(response.text, "html.parser")
+        soup = BeautifulSoup(r.text, "html.parser")
         job_cards = soup.find_all("div", class_="individual_internship")
-
         if not job_cards:
-            print(f"⚠️ No job cards found on page {page}")
             break
 
-        for job in job_cards:
+        for j in job_cards:
             try:
-                title_tag = job.find("h3", class_="job-internship-name")
-                title = title_tag.get_text(strip=True) if title_tag else None
+                title_tag = j.find("h3", class_="job-internship-name")
+                company_tag = j.find("p", class_="company-name")
+                location_tag = j.find("a", class_="location_link") or j.find("span", class_="location")
+                if not location_tag:
+                    location_tag = j.find("span")
+                posted_date = j.select_one('div.color-labels span') or j.find("span", class_="posted-by-name")
+                stipend_tag = j.find("span", class_="stipend")
+                duration_tag = j.find("div", class_="other_detail_item_row") or j.find("span", class_="duration")
+                skills_tag = j.find("div", class_="round_tabs_container")
+                # Find the main job link (usually in the title area)
+                link_tag = j.find("a", class_="view_detail_button") or j.find("a", href=True)
 
-                company_tag = job.find("p", class_="company-name")
-                company = company_tag.get_text(strip=True) if company_tag else None
-
-                location_tag = job.find("a", class_="location_link")
+                title = title_tag.get_text(strip=True) if title_tag else "N/A"
+                company = company_tag.get_text(strip=True) if company_tag else "N/A"
                 location = location_tag.get_text(strip=True) if location_tag else city
-
-                stipend_tag = job.find("span", class_="stipend")
-                salary = stipend_tag.get_text(strip=True) if stipend_tag else "Not Mentioned"
-
-                link_tag = job.find("a", href=True)
-                link = f"https://internshala.com{link_tag['href']}" if link_tag else None
-
-                if not (title and company and link):
-                    continue
+                posted = posted_date.get_text(strip=True) if posted_date else "Recently Posted"
+                salary = stipend_tag.get_text(strip=True) if stipend_tag else "N/A"
+                duration = duration_tag.get_text(strip=True) if duration_tag else "N/A"
+                skills = ", ".join([s.get_text(strip=True) for s in skills_tag.find_all("span")]) if skills_tag else "N/A"
+                
+                if link_tag and link_tag.has_attr("href"):
+                    href = link_tag["href"]
+                    link = href if href.startswith("http") else f"https://internshala.com{href}"
+                else:
+                    link = "N/A"
 
                 jobs.append({
                     "Job Title": title,
                     "Company Name": company,
                     "Location": location,
-                    "Experience": experience,
-                    "Salary": salary,
+                    "Experience Required": experience,
+                    "Salary / Stipend": salary,
+                    "Skills / Role": skills,
+                    "Duration": duration,
+                    "Posted Date": posted,
                     "Job Portal": "Internshala",
-                    "Job URL": link
+                    "Job URL": link,
                 })
             except Exception as e:
                 print("⚠️ Error parsing job card:", e)
@@ -82,3 +81,5 @@ def scrape_internshala(designation, city, experience):
 
     print(f"✅ Found {len(jobs)} jobs from Internshala")
     return jobs
+
+
