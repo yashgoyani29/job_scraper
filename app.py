@@ -123,11 +123,26 @@ if st.button("🚀 Search Jobs"):
 
     # ---------------- Combine & Display Results -----------------
     if all_jobs:
+        # ✅ Display search criteria prominently
+        st.markdown("---")
+        st.markdown("### 📋 Your Search Criteria")
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.markdown(f"**🎯 Job Title:** {designation}")
+        with col2:
+            st.markdown(f"**📍 Location:** {city}")
+        with col3:
+            st.markdown(f"**🎓 Experience:** {experience}")
+        st.markdown("---")
+        
         df = pd.DataFrame(all_jobs)
+
+        # ✅ Add the searched job title column
+        df["Searched Job Title"] = designation
 
         # ✅ Ensure all columns exist (prevents KeyErrors)
         expected_columns = [
-            "Job Title", "Company Name", "Location", "Experience Required",
+            "Searched Job Title", "Job Title", "Company Name", "Location", "Experience Required",
             "Salary", "Salary / Stipend", "Skills / Role", "Duration",
             "Posted Date", "Job Portal", "Job URL"
         ]
@@ -146,31 +161,31 @@ if st.button("🚀 Search Jobs"):
             df["Salary / Stipend"] = df["Salary"]
             df.drop(columns=["Salary"], inplace=True, errors="ignore")
 
+        # ✅ Remove duplicates (Job Title + Company)
+        raw_count = len(df)
+        df.drop_duplicates(subset=["Job Title", "Company Name"], inplace=True)
+        unique_count = len(df)
+
         # ✅ Make Job URLs clickable (only for display, keep original for saving)
         df_display = df.copy()
         df_display["Job URL"] = df_display["Job URL"].apply(
             lambda x: f"[🔗 View Job]({x})" if isinstance(x, str) and x != "N/A" else "N/A"
         )
 
-        # ✅ Remove duplicates (Job Title + Company)
-        raw_count = len(df)
-        df.drop_duplicates(subset=["Job Title", "Company Name"], inplace=True)
-        unique_count = len(df)
-
         st.info(f"🧾 Merged {raw_count} listings → after removing duplicates: **{unique_count} unique jobs saved.**")
         print(f"🧾 Merged {raw_count} listings → after removing duplicates: {unique_count} unique jobs saved.")
 
-        # ✅ Column order for display
+        # ✅ Column order for display (include searched job title first)
         display_cols = [
-            "Job Title", "Company Name", "Location", "Experience Required",
+            "Searched Job Title", "Job Title", "Company Name", "Location", "Experience Required",
             "Salary / Stipend", "Posted Date",
             "Job Portal"
         ]
         # Ensure display columns exist
         available_display_cols = [col for col in display_cols if col in df_display.columns]
 
-        # ✅ Display results
-        st.success(f"✅ Found {len(df)} unique job listings (merged from Freshersworld + Internshala)")
+        # ✅ Display results with searched job title
+        st.success(f"✅ Found {len(df)} unique job listings for **{designation}** (merged from Freshersworld + Internshala)")
         st.dataframe(df_display[available_display_cols], width='stretch')
 
         # ✅ Save outputs (save full dataframe with all columns)
